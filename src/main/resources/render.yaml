@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: number-classifier-api
+    runtime: docker
+    repo: https://github.com/your-username/number-classifier-api
+    branch: main
+    plan: free
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://your-mongo-uri
